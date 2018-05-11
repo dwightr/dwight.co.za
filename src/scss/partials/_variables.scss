@@ -1,0 +1,26 @@
+$black: #000;
+$white: #fff;
+// $blue: #3ea5ce;
+// $green: #99c712;
+// $yellow: lighten(#ffba00, 5%);
+// $red: #E53B3A;
+
+$grey0 : #d4e9fc;
+$grey1 : #9db8cd;
+$grey2 : #72828f;
+$grey3 : #52565f;
+$grey4 : #2c323e;
+
+// $colors: $blue, $green, $yellow, $red;
+
+// $key: random( length($colors) );
+// $nth: nth( $colors, $key );
+
+// $main-color: $nth !default;
+
+$backgrounds: $grey3, $grey4;
+
+$key: random( length($backgrounds));
+$nth: nth( $backgrounds, $key);
+
+$main-color: $nth !default;

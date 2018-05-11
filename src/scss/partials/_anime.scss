@@ -1,0 +1,19 @@
+@keyframes rotateForward{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(130deg);
+    }
+}
+
+@keyframes rotateBack{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-130deg);
+    }
+}

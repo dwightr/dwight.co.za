@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Dwight Ramokhola</title>
+    <meta name="description" content="This is a site about Dwight Ramokhola" />
+    <meta name="keywords" content="This is a site by Dwight Ramokhola" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:url" content="http://dwight.co.za">
+    <meta name="twitter:url" content="http://dwight.co.za">
+    <meta property="og:image" content="http://dwight.co.za/img/site-thumb.jpg">
+    <meta name="twitter:image" content="http://dwight.co.za/img/site-thumb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dwight Ramokhola | Portfolio">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@soulistiqdj">
+    <meta name="twitter:creator" content="@soulistiqdj">
+    <meta name="twitter:creator" content="@soulistiqdj">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    
+    <!-- build-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+    <nav>
+        <div class="logo">
+            <img src="images/dwight@2x.png" alt="Dwight logo">
+            <small style="color: #fff;">Dwight</small>
+        </div>
+        <ul>
+            <li>
+                <!-- <a href="/home.html" title="home">Home -->
+                <a href="#home" title="home">Home
+                    <i class="material-icons">home</i>
+                </a>
+            </li>
+            <li>
+                <a href="#about" title="about">About
+                    <i class="material-icons">account_circle</i>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" title="contact">Contact
+                    <i class="material-icons">info</i>
+                </a>
+            </li>
+        </ul>
+        <!-- TODO: -->
+        <!-- <footer>
+            <ul>
+                <li><i class="material-icons">facebook</i></li>
+                <li><i class="material-icons">linkedIn</i></li>
+                <li><i class="material-icons">instagram</i></li>
+                <li><i class="material-icons">github</i></li>
+            </ul>
+        </footer> -->
+    </nav>
+    <section class="header" id="home">
+        <div class="overlay"></div>
+        <div class="content" id="msg">
+            <h1 class="msg">
+                <span class="txt-rotate" 
+                        data-period="1500" 
+                        data-rotate='[ "Hi, my name is Dwight Ramokhola.", 
+                                        "I am a Front-End Developer...", 
+                                        "...and an aspiring Full-Stack \n Web Developer 🙂"]'>
+                </span>
+            </h1>
+        </div>
+    </section>
+    <section id="about">
+        <div class="row">
+            <div class="column">
+                <div class="about">
+                    <h1>About me!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in id hic et omnis eveniet saepe cum vel fugiat magni nulla aliquam atque ullam suscipit sapiente minima, at quos doloribus, mollitia quam iste delectus unde consectetur? Necessitatibus impedit esse accusantium?</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillbar clearfix " data-percent="85%">
+                    <div class="skillbar-title" style="background: #000c2f;">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8)"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="70%">
+                    <div class="skillbar-title" style="background: #608cb3;">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="55%">
+                    <div class="skillbar-title" style="background: #2b2c40;">
+                        <span>jQuery</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">55%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="40%">
+                    <div class="skillbar-title" style="background: #7e0036;">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">40%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="40%">
+                    <div class="skillbar-title" style="background: #c20c56;">
+                        <span>AEM</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">40%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="50%">
+                    <div class="skillbar-title" style="background: #000c2f;">
+                        <span>Wordpress</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="50%">
+                    <div class="skillbar-title" style="background: #608cb3;">
+                        <span>Drupal</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="45%">
+                    <div class="skillbar-title" style="background: #2b2c40;">
+                        <span>Vuejs</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">45%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="20%">
+                    <div class="skillbar-title" style="background: #7e0036;">
+                        <span>Angular</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">20%</div>
+                </div>
+                
+                <div class="skillbar clearfix " data-percent="53%">
+                    <div class="skillbar-title" style="background: #c20c56;">
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="skillbar-bar" style="background: rgba(0, 12, 47, .8);"></div>
+                    <div class="skill-bar-percent">53%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="work">
+        <h1>What have I worked on</h1>
+        <div class="row">
+            <div class="column">
+                <h1>Blue</h1>
+            </div>
+            <div class="column">
+                <h1>Red</h1>
+            </div>
+        </div>
+    </section> -->
+    <section id="contact">
+        <div class="contact-form">
+            <h1>Call me baybee!!</h1>
+            <form id="ajax-contact" method="post" action="mailer.php">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+            
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            
+                <div class="field">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            <div id="form-messages"></div>
+        </div>
+        <div class="map">
+            <!-- <h3>My Google Maps Demo</h3> -->
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var uluru = { lat: -25.770, lng: 28.085 };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 7,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBezKB85iiiGQZdZr0iGZi9dytRy2h0wnQ&callback=initMap"></script>
+        </div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.978763602434!2d28.083742315021063!3d-25.77126498363241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957d69757d8ab7%3A0xb35b4a1080f8ac77!2s4+Mabothe+St%2C+Atteridgeville%2C+Pretoria%2C+0006!5e0!3m2!1sen!2sza!4v1525876882952"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    </section>
+
+    <!-- build:js js/bundle.js-->
+    <!-- <script src="js/vendor/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

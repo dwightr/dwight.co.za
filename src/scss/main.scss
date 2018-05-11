@@ -1,0 +1,23 @@
+/**
+ * https://wwww.dwight.co.za/
+ * @author Dwight Ramokhola
+ * 
+ */
+
+ * {
+     box-sizing: border-box;
+ }
+ html,
+ body {
+     margin: 0;
+     font-family: Raleway;
+     overflow-x: hidden;
+ }
+
+ @import 'partials/variables';
+ @import 'partials/mixins';
+ @import 'partials/anime';
+ @import 'partials/nav';
+ @import 'partials/skillbar';
+ @import 'partials/sections';
+ @import 'partials/contact-form';
