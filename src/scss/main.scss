@@ -12,6 +12,7 @@
      margin: 0;
      font-family: Raleway;
      overflow-x: hidden;
+     color: #fff;
  }
 
  @import 'partials/variables';
@@ -20,4 +21,5 @@
  @import 'partials/nav';
  @import 'partials/skillbar';
  @import 'partials/sections';
+ @import 'partials/about';
  @import 'partials/contact-form';

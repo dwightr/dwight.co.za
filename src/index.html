@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta property="og:url" content="http://dwight.co.za">
     <meta name="twitter:url" content="http://dwight.co.za">
-    <meta property="og:image" content="http://dwight.co.za/img/site-thumb.jpg">
-    <meta name="twitter:image" content="http://dwight.co.za/img/site-thumb.jpg">
+    <meta property="og:image" content="images/site-thumb.jpg">
+    <meta name="twitter:image" content="images/site-thumb.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
@@ -21,7 +21,6 @@
     <meta name="twitter:site" content="@soulistiqdj">
     <meta name="twitter:creator" content="@soulistiqdj">
     <meta name="twitter:creator" content="@soulistiqdj">
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
     <meta name="theme-color" content="#000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -48,8 +47,10 @@
     <div class="menu"></div>
     <nav>
         <div class="logo">
-            <img src="images/dwight@2x.png" alt="Dwight logo">
-            <small style="color: #fff;">Dwight</small>
+            <a href="/">
+                <img src="images/dwight@2x.png" alt="Dwight logo">
+                <small style="color: #fff;">Dwight</small>
+            </a>
         </div>
         <ul>
             <li>
@@ -84,7 +85,7 @@
         <div class="content" id="msg">
             <h1 class="msg">
                 <span class="txt-rotate" 
-                        data-period="1500" 
+                        data-period="100" 
                         data-rotate='[ "Hi, my name is Dwight Ramokhola.", 
                                         "I am a Front-End Developer...", 
                                         "...and an aspiring Full-Stack \n Web Developer 🙂"]'>
@@ -227,7 +228,193 @@
                     var uluru = { lat: -25.770, lng: 28.085 };
                     var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 7,
-                        center: uluru
+                        center: uluru,
+                        // styles: [
+                        //     {
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#212121"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "elementType": "labels.icon",
+                        //         "stylers": [
+                        //         {
+                        //             "visibility": "off"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#757575"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "elementType": "labels.text.stroke",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#212121"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "administrative",
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#757575"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "administrative.country",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#9e9e9e"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "administrative.land_parcel",
+                        //         "stylers": [
+                        //         {
+                        //             "visibility": "off"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "administrative.locality",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#bdbdbd"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "poi",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#757575"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "poi.park",
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#181818"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "poi.park",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#616161"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "poi.park",
+                        //         "elementType": "labels.text.stroke",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#1b1b1b"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "road",
+                        //         "elementType": "geometry.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#2c2c2c"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "road",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#8a8a8a"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "road.arterial",
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#373737"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "road.highway",
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#3c3c3c"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "road.highway.controlled_access",
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#4e4e4e"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "road.local",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#616161"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "transit",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#757575"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "water",
+                        //         "elementType": "geometry",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#000000"
+                        //         }
+                        //         ]
+                        //     },
+                        //     {
+                        //         "featureType": "water",
+                        //         "elementType": "labels.text.fill",
+                        //         "stylers": [
+                        //         {
+                        //             "color": "#3d3d3d"
+                        //         }
+                        //         ]
+                        //     }
+                        // ]
                     });
                     var marker = new google.maps.Marker({
                         position: uluru,

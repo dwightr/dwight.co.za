@@ -60,7 +60,7 @@ nav {
    
    @media (min-width: 768px) {
        position: fixed;
-       width: 70px;
+       width: 50px;
        background: rgba(0, 0, 0, .8);
        background: #111f28;
        display: block;
@@ -96,7 +96,7 @@ nav {
                    font-size: 0;
                    padding: 20px 0;
                    &:hover {
-                       background: #484e52;
+                    //    background: #484e52;
                        .material-icons {
                            color: $black;
                        }
@@ -105,9 +105,10 @@ nav {
                .material-icons {
                    display: none;
                    @media (min-width: 768px) {
+                       transition: all .23s ease;
                        color: #484e52;
                        display: inline-block;
-                       font-size: 30px;
+                       font-size: 23px;
                    }
                }
            }
@@ -129,6 +130,12 @@ nav {
     background: #060607;
     padding: 15px 0;
     text-align: center;
+    a {
+        display: block;
+    }
+    small {
+        font-size: 10px;
+    }
     img {
         display: block;
         width: 100%;

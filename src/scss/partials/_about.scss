@@ -1,0 +1,15 @@
+// About me section
+#about {
+    .about {
+        padding-right: 30px;
+        &::before {
+            background-image: url(../images/about-dwight.png);
+            background-size: 100%;
+            content: '';
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin-right: 30px;
+        }
+    }
+}
