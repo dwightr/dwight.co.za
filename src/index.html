@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <div class="menu"></div>
+    <div class="menu"><span></span></div>
     <nav>
         <div class="logo">
             <a href="/">
@@ -85,7 +85,7 @@
         <div class="content" id="msg">
             <h1 class="msg">
                 <span class="txt-rotate" 
-                        data-period="100" 
+                        data-period="2000" 
                         data-rotate='[ "Hi, my name is Dwight Ramokhola.", 
                                         "I am a Front-End Developer...", 
                                         "...and an aspiring Full-Stack \n Web Developer 🙂"]'>
@@ -221,13 +221,12 @@
             <div id="form-messages"></div>
         </div>
         <div class="map">
-            <!-- <h3>My Google Maps Demo</h3> -->
             <div id="map"></div>
             <script>
                 function initMap() {
                     var uluru = { lat: -25.770, lng: 28.085 };
                     var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 7,
+                        zoom: 6,
                         center: uluru,
                         // styles: [
                         //     {

@@ -1,5 +1,5 @@
 // $(function () {
-//     $('header nav a').click(function () {
+//     $('nav a').click(function () {
 //         var $linkClicked = $(this).attr('href');
 //         document.location.hash = $linkClicked;
 //         var $pageRoot = $linkClicked.replace('#page', '');
@@ -26,8 +26,8 @@
 
 $(function () {
     var nav = $('nav');
-
     var navCloseHandler = (function(){
+        
         return function(){
                 nav.removeClass('open');
                 // $('nav ul').fadeOut(180);
@@ -114,7 +114,7 @@ TxtRotate.prototype.tick = function () {
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    var delta = 300 - Math.random() * 100;
+    var delta = 200 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -124,7 +124,7 @@ TxtRotate.prototype.tick = function () {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 200;
+        delta = 100;
     }
 
     setTimeout(function () {

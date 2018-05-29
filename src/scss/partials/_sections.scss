@@ -3,7 +3,7 @@ section {
     @import 'header';
     @include backgrounds($main-color, 5);
     padding: 20px;
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
         padding: 30px 30px 30px 100px;
     }
     .row {

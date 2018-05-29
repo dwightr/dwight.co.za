@@ -1,15 +1,27 @@
 // About me section
 #about {
+    height: auto;
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
     .about {
-        padding-right: 30px;
+        text-align: center;
+        @media (min-width: 992px) {
+            // text-align: left;
+            padding-right: 30px;
+        }
         &::before {
             background-image: url(../images/about-dwight.png);
             background-size: 100%;
             content: '';
-            float: left;
+            display: block;
             height: 200px;
             width: 200px;
-            margin-right: 30px;
+            margin: 0 auto;
+            @media (min-width: 992px) {
+                float: left;
+                margin-right: 30px;
+            }
         }
     }
 }
