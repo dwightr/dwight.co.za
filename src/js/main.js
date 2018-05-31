@@ -37,6 +37,8 @@ $(function () {
     // Navigation functionality
     $('.menu').click(function () {
         $(this).toggleClass('open');
+        $('html').toggleClass('locked');
+        $('body').toggleClass('locked');
         if (nav.hasClass('open')) {
             navCloseHandler();
         } else {
@@ -195,8 +197,12 @@ $(function () {
     });
 
     // Smoothe scroll to section
-    $("nav ul li a").click(function () {
+    $(".nav-items li a").click(function () {
         var $anchor = $(this).attr('href');
+        $('html').removeClass('locked');
+        $('body').removeClass('locked');
+        $('.menu').removeClass('open');
+        $('nav').removeClass('open');
         $('html, body').animate({
             scrollTop: $($anchor).offset().top -1
         }, 600);

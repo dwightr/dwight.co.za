@@ -13,6 +13,10 @@
      font-family: Raleway;
      overflow-x: hidden;
      color: #fff;
+     font-size: 16px;
+     &.locked {
+         overflow: hidden;
+     }
  }
 
  @import 'partials/variables';
@@ -22,4 +26,5 @@
  @import 'partials/skillbar';
  @import 'partials/sections';
  @import 'partials/about';
+ @import 'partials/work';
  @import 'partials/contact-form';

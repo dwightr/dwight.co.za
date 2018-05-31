@@ -12,17 +12,17 @@
         height: 100%;
     }
     .contact-form {
-        position: absolute;
-        z-index: 1;
-        background: rgba(0, 0, 0, .5);
         padding: 30px;
-        height: 70vh;
-        transform: translateY(-50%);
-        top: 50%;
-        height: auto;
         @media (min-width: 768px) {
+            position: absolute;
+            z-index: 1;
+            background: rgba(0, 0, 0, .5);
+            height: 70vh;
+            transform: translateY(-50%);
+            top: 50%;
+            height: auto;
             left: 170px;
-            width: 30vw;
+            width: 400px;
         }
     }
 }

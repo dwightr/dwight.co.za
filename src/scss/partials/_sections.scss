@@ -1,21 +1,35 @@
 section {
     height: 100vh;
     @import 'header';
-    @include backgrounds($main-color, 5);
+    // @include backgrounds($main-color, 5);
+    background: darken($color: #111f28, $amount: 5);
     padding: 20px;
     @media (min-width: 768px) {
-        padding: 30px 30px 30px 100px;
+        padding: 90px 30px 90px 100px;
     }
     .row {
         @media (min-width: 992px) {
             display: flex;
             align-items: center;
-            height: 100%;
+            min-height: 75%;
         }
         .column {
+            margin-bottom: 3em;
             @media (min-width: 992px) {
                 width: calc(100% / 2);
+                margin-bottom: 0;
             }
+        }
+    }
+    h1 {
+        font-family: 'Bowlby One SC', cursive;
+        text-align: center;
+        font-size: 2em;
+        font-weight: normal;
+        margin-bottom: 0;
+        @media (min-width: 992px) {
+            font-size: 3em;
+            text-align: left;
         }
     }
 }
@@ -24,7 +38,7 @@ section {
     display: flex;
     // justify-content: center;
     align-items: center;
-
+    position: relative;
 
     height: 100vh;
     background-attachment: fixed !important;
@@ -49,9 +63,12 @@ section {
     }
     h1 {
         color: #fff;
+        font-family: Raleway;
+        font-weight: bold;
         font-size: 40px;
         display: inline;
         padding-right: 20px;
+        // height: 200px;
         @media (min-width: 992px) {
             font-size: 100px;
         }
