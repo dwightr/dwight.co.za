@@ -204,7 +204,7 @@ $(function () {
         $('.menu').removeClass('open');
         $('nav').removeClass('open');
         $('html, body').animate({
-            scrollTop: $($anchor).offset().top -1
+            scrollTop: $($anchor).offset().top
         }, 600);
     });
 });
