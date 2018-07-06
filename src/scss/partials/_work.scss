@@ -27,22 +27,93 @@
                     @media (min-width: 768px) {
                         .project-detail {
                             transform: translateX(0);
-                        }
-                        .teaser {
-                            opacity: 0;
+                            background: rgba(0, 0, 0, .9);
                         }
                     }
                 }
-                .teaser {
-                    transition: all .2s ease;
+                .project-creative {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    &.nedbank {
+                        background-image: url(../images/work/nedbank-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/nedbank.jpg);
+                        }
+                    }
+                    &.masterpass {
+                        background-image: url(../images/work/masterpass-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/masterpass.jpg);
+                        }
+                    }
+                    &.randgold {
+                        background-image: url(../images/work/randgold-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/randgold.jpg);
+                        }
+                    }
+                    &.marketedge {
+                        background-image: url(../images/work/marketedge-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/marketedge.jpg);
+                        }
+                    }
+                    &.nedbankcup {
+                        background-image: url(../images/work/nedbankcup-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/nedbankcup.jpg);
+                        }
+                    }
+                    &.nedbankid {
+                        background-image: url(../images/work/nedbankid-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/nedbankid.jpg);
+                        }
+                    }
+                    &.nedbankmfc {
+                            background-image: url(../images/work/nedbankmfc-mobi.jpg);
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/nedbankmfc.jpg);
+                        }
+                    }
+                    &.sbynm {
+                            background-image: url(../images/work/sbynm-mobi.jpg);
+                            background-position-y: 0;
+                        @media (min-width: 600px) {
+                            background-image: url(../images/work/sbynm.jpg);
+                            background-position: center;
+                        }
+                    }
                 }
+                // .teaser {
+                //     transition: all .2s ease;
+                // }
                 .project-detail {
                     transform: translateY(100%);
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                    transition: all .3s ease;
+                    transition: all .45s ease;
                     padding: 1em;
+                    a {
+                        display: inline-block;
+                        border-radius: 3px;
+                        border: none;
+                        font-size: 0.9rem;
+                        padding: 0.5rem 0.8em;
+                        background: #69c773;
+                        border-bottom: 1px solid #498b50;
+                        color: white;
+                        -webkit-font-smoothing: antialiased;
+                        font-weight: bold;
+                        margin: 0;
+                        width: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                    }
                 }
             }
         }

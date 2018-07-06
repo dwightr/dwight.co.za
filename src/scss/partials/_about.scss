@@ -7,7 +7,7 @@
     .about {
         text-align: center;
         @media (min-width: 992px) {
-            // text-align: left;
+            text-align: left;
             padding-right: 30px;
         }
         &::before {

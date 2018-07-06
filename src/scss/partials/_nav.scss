@@ -1,15 +1,38 @@
+header {
+    position: fixed;
+    height: 60px;
+    background: #111f28;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    .logo {
+        display: inline-block;
+        padding: 12px 10px;
+        height: 100%;
+    }
+    @media (min-width: 768px) {
+        display: none;
+        .logo {
+            display: none;
+        }
+    }
+}
 .menu {
     height: 60px;
     width: 60px;
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 0;
+    right: 0;
+    padding: 10px;
     z-index: 999;
     transition: all .3s ease;
     &::before,
     &::after,
     span {
-        background: red;
+        background: black;
+        border-radius: 2px;
+        // border: 1px solid $white;
         content: '';
         display: block;
         height: 3px;
@@ -17,13 +40,17 @@
         margin: 0 auto;
         position: relative;
         transition: all .3s ease;
+        transform-origin: 20%;
     }
     &::before {
-        top: 25px;
+        top: 10px;
         transform: rotate(0deg);
     }
+    span {
+        top: 16px;
+    }
     &::after {
-        top: 15px;
+        top: 22px;
         height: 3px; // animation: none; 
         transform: rotate(0deg);
     }
@@ -31,11 +58,21 @@
         &::before {
             // animation: rotateForward.3s ease forwards; 
             transform: rotate(130deg);
+            background: #111f28;
         }
         &::after {
             // animation: rotateBack.3s ease forwards; 
             transform: rotate(-130deg);
+            background: #111f28;
             top: 22px;
+        }
+        &::before,
+        &::after,
+        span {
+            left: 20px;
+        }
+        span {
+            opacity: 0;
         }
     }
     @media (min-width: 768px) {

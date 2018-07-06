@@ -3,9 +3,12 @@ section {
     @import 'header';
     // @include backgrounds($main-color, 5);
     background: darken($color: #111f28, $amount: 5);
-    padding: 20px;
+    padding: 30px 10px;
     @media (min-width: 768px) {
         padding: 90px 30px 90px 100px;
+    }
+    @media screen and (min-width: 1300px) {
+        padding: 30px 30px 30px 100px;
     }
     .row {
         @media (min-width: 992px) {
@@ -26,7 +29,7 @@ section {
         text-align: center;
         font-size: 2em;
         font-weight: normal;
-        margin-bottom: 0;
+        margin: auto 0;
         @media (min-width: 992px) {
             font-size: 3em;
             text-align: left;
