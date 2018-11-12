@@ -27,7 +27,7 @@
     width: 110px;
     font-weight: bold;
     font-size: 13px;
-    color: #ffffff;
+    color: $white;
     // background: #6adcfa;
     -webkit-border-top-left-radius: 3px;
     -webkit-border-bottom-left-radius: 4px;
@@ -67,6 +67,6 @@
     font-size: 11px;
     height: 35px;
     line-height: 35px;
-    color: #ffffff;
+    color: $white;
     color: rgba(0, 0, 0, 0.4);
 }

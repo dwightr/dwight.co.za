@@ -204,6 +204,7 @@ $(function () {
             // Clear the form.
             $('#name').val('');
             $('#email').val('');
+            $('#subject').val('');
             $('#message').val('');
             }).fail(function (data) {
                 // Make sure that the formMessages div has the 'error' class.

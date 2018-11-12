@@ -52,7 +52,7 @@ section {
     background-position-x: 42% !important;
     .content {
         position: relative;
-        color: #fff;
+        color: $white;
         z-index: 2;
         .msg {
             @media (max-width: 600px) {
@@ -72,9 +72,9 @@ section {
         z-index: 1;
     }
     h1 {
-        color: #fff;
-        font-family: Raleway;
-        font-weight: bold;
+        color: $white;
+        font-family: 'Bowlby One SC', cursive;;
+        font-weight: normal;
         font-size: 40px;
         display: inline;
         padding-right: 20px;
@@ -84,7 +84,17 @@ section {
         }
     }
     .txt-rotate>.wrap {
-        border-right: 0.08em solid #fff;
+        border-right: 0.08em solid $white;
+    }
+}
+
+p {
+    a {
+        color: $white;
+        &:active,
+        &:visited {
+            color: $white;
+        }
     }
 }
 

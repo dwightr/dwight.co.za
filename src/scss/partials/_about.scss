@@ -9,6 +9,8 @@
         @media (min-width: 992px) {
             text-align: left;
             padding-right: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
         }
         &::before {
             background-image: url(../images/about-dwight.png);

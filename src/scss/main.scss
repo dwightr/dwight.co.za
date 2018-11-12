@@ -3,22 +3,7 @@
  * @author Dwight Ramokhola
  * 
  */
-
- * {
-     box-sizing: border-box;
- }
- html,
- body {
-     margin: 0;
-     font-family: Raleway;
-    //  overflow-x: hidden;
-     color: #fff;
-     font-size: 16px;
-     &.locked {
-         overflow: hidden;
-     }
- }
-
+ 
  @import 'partials/variables';
  @import 'partials/mixins';
  @import 'partials/anime';
@@ -28,3 +13,18 @@
  @import 'partials/about';
  @import 'partials/work';
  @import 'partials/contact-form';
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    font-family: Raleway;
+//  overflow-x: hidden;
+    color: $white;
+    font-size: 18px;
+    &.locked {
+        overflow: hidden;
+    }
+}

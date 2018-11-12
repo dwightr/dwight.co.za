@@ -129,15 +129,18 @@ nav {
                 font-size: 40px;
                 text-decoration: none;
                 display: block;
-                transition:  background-color .23s ease;
+                transition:  all .23s ease;
                 @media (min-width: 768px) {
-                    font-size: 0;
+                    font-size: 12px;
                     padding: 20px 0;
+                    color: transparent;
                     &:hover {
                         //    background: #484e52;
+                        color: $white;
+                        font-size: 12px;
                         .material-icons,
                         .fas {
-                            color: $black;
+                            color: $white;
                         }
                     }
                 }
@@ -149,6 +152,7 @@ nav {
                         color: #484e52;
                         display: inline-block;
                         font-size: 1.5rem;
+                        margin-bottom: 7px;
                     }
                 }
             }
